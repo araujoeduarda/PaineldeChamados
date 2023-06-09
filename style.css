@@ -1,0 +1,268 @@
+/* CSS VARIABLES */
+:root {
+  --primary: #141414;
+  --light: #F3F3F3;
+  --dark: 	#686868;
+}
+
+html, body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary);
+  color: var(--light);
+  font-family: Arial, Helvetica, sans-serif;
+  container-sizing: border-container;
+  line-height: 1.4;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  padding-top: 65px;  
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+header {
+  padding: 20px 20px 0 20px;
+  position: fixed;
+  top: 0;
+display: flex;
+justify-content: space-between;
+  background-color: var(--primary);
+  width: 100%;
+  margin-bottom: 0px;  
+}
+
+.chamadosLogo {
+  grid-area: nt;
+  object-fit: cover;
+  width: 100px;
+  max-height: 100%;
+  
+  padding-left: 30px;
+  padding-top: 0px;  
+}
+
+.chamadosLogo img {  
+  height: 35px;     
+}
+
+#logo {
+
+  margin: 0; 
+  padding: 0; 
+}
+
+
+.main-nav {
+  grid-area: mn;
+  padding: 0 30px 0 20px;
+}
+
+.main-nav a {
+  color: var(--light);
+  text-decoration: none;
+  margin: 5px;  
+}
+
+.main-nav a:hover {
+  color: #FF0000;
+}
+
+
+
+/* MAIN CONTIANER */
+.main-container {
+  padding: 50px;
+}
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(6, minmax(100px, 1fr));
+}
+
+.container a {
+  transition: transform .3s;  
+}
+
+.container a:hover {
+  transition: transform .5s;
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);  
+  transform: scale(1.2);
+}
+
+.container img {
+  border-radius: 4px;
+}
+
+/* LINKS */
+.link {
+  padding: 50px;
+}
+
+.sub-links ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.sub-links a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.sub-links a:hover {
+  color: var(--dark);
+  text-decoration: underline;
+}
+
+.logos a{
+  padding: 10px;
+}
+
+.logo {
+  color: var(--dark);
+}
+
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  text-align: center;
+  color: var(--dark);
+  margin: 10px;
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width: 900px) {
+
+  header {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "nt nt nt  .  .  . sb . . . "
+    "mn mn mn mn mn mn  mn mn mn mn";
+  }
+
+  .container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+  }
+
+}
+
+@media(max-width: 700px) {
+
+  header {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "nt nt nt  .  .  . sb . . . "
+    "mn mn mn mn mn mn  mn mn mn mn";
+  }
+
+  .container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+
+  .sub-links ul {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+   
+}
+
+@media(max-width: 500px) {
+
+  .main {
+    font-size: 15px;
+  }
+
+  header {
+    margin: 0;
+    padding: 20px 0 0 0;
+    position: static;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+    "nt"    
+    "mn"
+    "sb";
+    text-align: center;
+  }
+
+  .chamadosLogo {
+    max-width: 100%;
+    margin: auto;
+    padding-right: 20px;
+  }
+
+  .main-nav {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 18px;
+  }
+
+ 
+
+  .container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;    
+  }
+
+  .container a:hover {
+    transition: transform .3s;
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);  
+    transform: scale(1.2);
+  }
+
+  .logos {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+
+  .sub-links ul {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    font-size: 15px;
+  }
+
+  
+
+  
+   
+}
