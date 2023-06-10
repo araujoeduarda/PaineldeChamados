@@ -1,12 +1,12 @@
 var cards = document.querySelectorAll('.container .card'); // selecionar todos os cards
 
-function minhaFuncao() {
+function slideMensagem() {
   var mensagem = this.querySelector('.mensagem');
   if (!mensagem) {
-    // Cria o elemento de texto com a mensagem
+    // Cria elemento de texto com mensagem
     mensagem = document.createElement('div');
     mensagem.textContent = 'Este setor é responsável por';
-    mensagem.classList.add('mensagem'); // Adiciona a classe para estilização
+    mensagem.classList.add('mensagem'); // Adiciona classe para fazer estilização
 
     // Define o estilo da mensagem
     mensagem.style.fontSize = '16px';
@@ -14,6 +14,11 @@ function minhaFuncao() {
     mensagem.style.textDecoration = 'none';
 
     this.appendChild(mensagem);
+
+    // Adicionar classe para iniciar a transição
+    setTimeout(function() {
+      mensagem.classList.add('show');
+    }, 10); // Espera um pequeno intervalo para ativar a transição
   }
 }
 
@@ -25,6 +30,6 @@ function removerMensagem() {
 }
 
 cards.forEach(function(card) {
-  card.addEventListener('mouseover', minhaFuncao);
+  card.addEventListener('mouseover', slideMensagem);
   card.addEventListener('mouseout', removerMensagem);
 });
