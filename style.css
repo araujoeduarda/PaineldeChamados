@@ -41,8 +41,10 @@ header {
   justify-content: baseline;
   background-color: var(--primary);
   width: 100%;
-  margin-bottom: 0px;  
+  margin-bottom: 0px;
+  box-sizing: border-box; /* Adicione esta linha */
 }
+
 
 .chamadosLogo {
   object-fit: cover;
@@ -89,6 +91,7 @@ header {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(6, minmax(100px, 1fr));
+  
 }
 
 .container a {
@@ -120,6 +123,7 @@ header {
 .link {
   padding: 50px;
 }
+
 
 .sub-links ul {
   list-style: none;
