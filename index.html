@@ -3,27 +3,35 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Netflix - Chamados</title>
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
+
+  <title>Netflix - Chamados</title>
 </head>
 <body>
   <div class="main">
     <!-- HEADER -->
     <header>
       <div class="chamadosLogo">
-        <a id="logo" href="#home"><img src="img/logo-white.svg"alt="Logo Image"></a>
+        <a id="logo" href="#home"><img src="img/logo-red.svg"alt="Logo Image"></a>
       </div>      
       <nav class="main-nav">                
         <a href="#home">Página Inicial</a>
         <a href="#tvShows">Chamados</a>
         <a href="#movies">Contato</a>
+        <a href="#movies">Protocolos</a>
       </nav>
     </header>
     
     <section class="main-container" >
-      <div class="mains-chamados" id="home">
-          <h1 id="home">Lista de Chamados</h1>
+      <div class="mains-chamados" id="chamados-lista">
+          <h1 id="home" class="home-titulo">Lista de Chamados</h1>
           <div class="container">
             <a href="" class="card"><img src="img/logos-chamados/TI.svg" alt="Setor de TI"></a>
             <a href="" class="card"><img src="img/logos-chamados/Financeiro.svg" alt="Setor Financeiro"></a>
@@ -37,16 +45,16 @@
       </div>
    
       
-      <div class="mains-chamados" id="home">
-        <h1 id="home">Relacionados a Saúde</h1>
+      <div class="mains-chamados">
+        <h1 id="chamados-saude" class="home-titulo">Relacionados a Saúde</h1>
         <div class="container">  
           <a href="" class="card"><img src="img/logos-chamados/Seguranca-do-Trabalho.svg" alt=""></a>      
         </div>
       </div>
 
       
-      <div class="mains-chamados" id="home">
-        <h1 id="home">Relacionados a Tecnologia</h1>
+      <div class="mains-chamados">
+        <h1 id="chamados-tec" class="home-titulo">Relacionados a Tecnologia</h1>
         <div class="container">  
           <a href="" class="card"><img src="img/logos-chamados/TI.svg" alt="Setor de TI"></a>
         </div>

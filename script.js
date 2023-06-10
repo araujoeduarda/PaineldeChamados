@@ -12,6 +12,8 @@ function slideMensagem() {
     mensagem.style.fontSize = '16px';
     mensagem.style.color = 'white';
     mensagem.style.textDecoration = 'none';
+    mensagem.style.background = 'rgba(128, 128, 128, 0.8)';
+    mensagem.style.transition = 'width 10s, height 12s, background-color 12s, opacity 12s, transform 12s';
 
     this.appendChild(mensagem);
 
