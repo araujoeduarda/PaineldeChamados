@@ -1,0 +1,28 @@
+.container-contato {
+  padding-top: 100px;
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.card-contato {
+  flex-basis: calc(23.33% - 10px);
+  background-color: #141414;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 1.125rem;
+  transition: background-color 0.2s ease-in;
+}
+
+.card-contato:hover {
+  background-color: #fff;
+  color: #141414;
+}
