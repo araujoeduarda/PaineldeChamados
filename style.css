@@ -46,19 +46,16 @@ header {
 }
 
 
-.chamadosLogo {
-  object-fit: cover;
-  max-height: 100%;
-  padding-top: 0px;
-}
 
-.chamadosLogo img {
-  height: 35px;
-}
 
 #logo {
   margin: 0; 
-  padding: 0; 
+  padding: 5px; 
+  color: red;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 1.625rem;
+  text-transform: uppercase;
 }
 
 
@@ -143,13 +140,10 @@ header {
   text-decoration: underline;
 }
 
-.logos a{
-  padding: 10px;
+#logo a{
+  padding: 100px;
 }
 
-.logo {
-  color: var(--dark);
-}
 
 
 /* FOOTER */
