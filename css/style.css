@@ -39,6 +39,7 @@ img {
 header {
   padding-top: 20px;
   padding-left: 45px;
+  padding-bottom: 20px;
   position: fixed;
   top: 0;
   display: flex;
@@ -48,6 +49,7 @@ header {
   width: 100%;
   margin-bottom: 0px;
   box-sizing: border-box; /* Adicione esta linha */
+  z-index: 2;
 }
 
 
