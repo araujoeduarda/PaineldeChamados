@@ -1,0 +1,84 @@
+* {
+  /* global reset */
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+.main2 {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  line-height: 1;
+  background-color: #141414;
+  font-size: 62.5%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.cont2 {
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.profile-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 4rem;
+  margin-bottom: 4rem;
+  padding: 10px;
+}
+
+.profie-item {
+  overflow: hidden;
+  border-radius: 3%;
+  transition: all 0.2s ease-in;
+}
+
+.profie-item:hover .profile-img {
+  border: 3px solid #fff;
+}
+
+.profie-item:hover .profile-link {
+  color: #fff;
+}
+
+.profie-item:hover {
+  transform: scale(1.1);
+}
+
+.profile-link {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  text-decoration: none;
+  color: #e5e5e5;
+  font-family: inherit;
+  font-size: 2rem;
+}
+
+.profile-img {
+  width: 100%;
+
+  border: 3px solid transparent;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: grey;
+  font-size: 2rem;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid grey;
+  padding: 1.5rem 2rem;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
