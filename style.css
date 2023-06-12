@@ -21,8 +21,13 @@ img {
   max-width: 100%;
 }
 
-h1 {
-  padding-top: 65px;  
+/* h1s */
+.home-titulo {
+  padding-top: 40px;  
+}
+
+.titulo2 {
+  padding-top: 30px;  
 }
 
 .main {
