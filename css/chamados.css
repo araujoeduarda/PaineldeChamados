@@ -1,0 +1,49 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+
+.containerChamado {
+  background-color: #141414;
+  padding: 2px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+
+.containerChamado p {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.abrir-chamado {
+  background-color: #E50914;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+
+.abrir-chamado:hover {
+  background-color: #141414;
+}
+
+.footer-chamados {
+  padding-top: 100px;
+  text-align: center;
+  color: var(--dark);
+  margin: 10px;
+  clear: both; /* Limpa o float anterior */
+}
+
+.chamadosub {
+padding-top: 300px;
+}

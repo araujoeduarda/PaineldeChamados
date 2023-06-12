@@ -58,7 +58,7 @@ header {
 #logo {
   margin: 0; 
   padding: 5px; 
-  color: red;
+  color: #E50914;
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
   font-size: 1.625rem;
@@ -89,7 +89,10 @@ header {
 /* MAIN CONTIANER */
 .main-container {
   padding: 50px;
+  overflow: auto;
 }
+
+
 
 .container {
   display: grid;
@@ -125,16 +128,21 @@ header {
 
 /* LINKS */
 .link {
-  padding: 50px;
+  padding: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
 
 .sub-links ul {
   list-style: none;
   padding: 0;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 180px;
 }
 
 .sub-links a {
@@ -147,6 +155,7 @@ header {
   text-decoration: underline;
 }
 
+
 #logo a{
   padding: 100px;
 }
@@ -155,11 +164,14 @@ header {
 
 /* FOOTER */
 footer {
-  padding: 20px;
+  padding: 0;
   text-align: center;
   color: var(--dark);
   margin: 10px;
+  clear: both; /* Limpa o float anterior */
 }
+
+
 
 /* MEDIA QUERIES */
 
