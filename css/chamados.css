@@ -47,3 +47,18 @@
 .chamadosub {
 padding-top: 300px;
 }
+
+/* Media Queries */
+
+@media(max-width: 700px) {
+  .containerChamado {
+    background-color: #141414;
+    padding-top: 2px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .main-container {
+    padding-top: 10px;
+  }
+  
+}
