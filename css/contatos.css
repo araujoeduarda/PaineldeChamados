@@ -1,17 +1,18 @@
 .container-contato {
   padding-top: 100px;
-  padding-left: 20px;
-  padding-right: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
+.mains-chamados-contato {
+  width: 100%;
+}
+
 .card-contato {
-  flex-basis: calc(23.33% - 10px);
+  flex-basis: 23.33%;
   background-color: #141414;
   padding: 10px;
   border-radius: 5px;
@@ -27,36 +28,23 @@
 .card-contato:hover {
   background-color: #fff;
   color: #141414;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in; /* Adicione a transição para manter o efeito suave */
 }
 
-/* QUERIES */
 
+/* Media Queries */
 @media (max-width: 800px) {
   .container-contato {
     padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
   }
 
   .card-contato {
-    flex-basis: 100%; /* Ocupa a largura total disponível */
+    flex-basis: 100%;
   }
 }
 
 @media (max-width: 600px) {
   .container-contato {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .card-contato {
-    width: 100%;
+    padding-top: 50px;
   }
 }
