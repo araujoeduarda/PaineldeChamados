@@ -26,3 +26,30 @@
   background-color: #fff;
   color: #141414;
 }
+
+/* QUERIES */
+
+@media (max-width: 800px) {
+  .container-contato {
+    padding-top: 50px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media (max-width: 600px) {
+
+
+  .container-contato {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .container .card {
+    width: 100%; 
+  }
+
+}
