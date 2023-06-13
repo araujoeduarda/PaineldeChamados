@@ -366,3 +366,17 @@ a {
   transform: scale(1);
   z-index: 2;
 }
+
+/* Queries */
+
+@media(max-width: 500px) {
+  .container .card .mensagem {
+    font-size: 9px;
+  }
+}
+
+@media(max-width: 300px) {
+  .container .card .mensagem {
+    font-size: 6.5px;
+  }
+}
