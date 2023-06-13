@@ -16,6 +16,9 @@ html, body {
   box-sizing: border-box;
   line-height: 1.4;
 }
+body {
+  overflow-x: hidden;
+}
 
 img {
   max-width: 100%;
@@ -89,7 +92,7 @@ header {
 /* MAIN CONTIANER */
 .main-container {
   padding: 50px;
-  overflow: auto;
+
 }
 
 
