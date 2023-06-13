@@ -143,7 +143,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 180px;
+  gap: 140px;
 }
 
 .sub-links a {
@@ -219,9 +219,7 @@ footer {
   }
 
   .sub-links ul {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
   
@@ -307,9 +305,8 @@ footer {
   }
 
   .sub-links ul {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    justify-content: flex-start;
     text-align: center;
     font-size: 15px;
   }
