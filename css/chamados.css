@@ -50,7 +50,20 @@ padding-top: 300px;
 
 /* Media Queries */
 
-@media(max-width: 700px) {
+@media(max-width: 800px) {
+  .containerChamado {
+    background-color: #141414;
+    padding-top: 2px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .main-container {
+    padding-top: 100px;
+  }
+  
+}
+
+@media(max-width: 450px) {
   .containerChamado {
     background-color: #141414;
     padding-top: 2px;
