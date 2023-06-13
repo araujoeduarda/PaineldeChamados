@@ -59,8 +59,7 @@ header {
 
 
 #logo {
-  margin: 0; 
-  padding: 5px; 
+  margin: 0 auto; 
   color: #E50914;
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
@@ -90,7 +89,9 @@ header {
 
 /* MAIN CONTIANER */
 .main-container {
-  padding: 50px;
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-right: 55px ;
 
 }
 
