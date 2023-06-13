@@ -62,14 +62,14 @@ header {
   margin: 0 auto; 
   text-transform: uppercase;
   max-width: 100%;
-  width: 100px;
+  width: 120px;
   height: 60px;
 }
 
 
 .main-nav {
   display: flex;
-  gap: 35px;
+  gap: 10px;
   align-items: center;
   grid-area: mn;
 }
@@ -157,10 +157,6 @@ header {
 }
 
 
-#logo a{
-  padding: 100px;
-}
-
 
 
 /* FOOTER */
@@ -231,6 +227,7 @@ footer {
   padding-top: 100px;
 }
 }
+
 
 
 @media(max-width: 500px) {
