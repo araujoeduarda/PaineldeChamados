@@ -189,23 +189,20 @@ footer {
     "mn mn mn mn mn mn  mn mn mn mn";
   }
 
-  .container {
-    display: grid;
-    grid-gap: 20px;
+  .main-container .container {
     grid-template-columns: repeat(4, minmax(100px, 1fr));
   }
 
 }
 
-@media(max-width: 700px) {
-
+@media (max-width: 800px) {
   header {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "nt nt nt  .  .  . sb . . . "
-    "mn mn mn mn mn mn  mn mn mn mn";
+    grid-template-areas:
+      "nt nt nt . . . sb . . ."
+      "mn mn mn mn mn mn mn mn mn mn";
   }
 
   .container {
@@ -214,13 +211,30 @@ footer {
     grid-template-columns: repeat(3, minmax(100px, 1fr));
   }
 
+  .main-nav {
+    grid-area: mn; 
+  }
+
+  .main-container .container {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+
   .sub-links ul {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
   }
-   
+
+  
 }
+
+
+@media (max-width: 880px) {
+.home-titulo {
+  padding-top: 100px;
+}
+}
+
 
 @media(max-width: 500px) {
 
@@ -242,6 +256,12 @@ footer {
     text-align: center;
   }
 
+  .container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+  }
+
   .chamadosLogo {
     max-width: 100%;
     margin: auto;
@@ -260,7 +280,9 @@ footer {
     font-size: 18px;
   }
 
- 
+  .main-container .container {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
 
   .container {
     display: grid;
@@ -289,6 +311,9 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
     font-size: 15px;
+  }
+  .home-titulo {
+    padding-top: 10px;
   }
 }
 
