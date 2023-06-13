@@ -169,7 +169,7 @@ footer {
   text-align: center;
   color: var(--dark);
   margin: 10px;
-  clear: both; /* Limpa o float anterior */
+  clear: both; 
 }
 
 
