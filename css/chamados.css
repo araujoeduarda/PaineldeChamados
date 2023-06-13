@@ -5,14 +5,12 @@
   padding-top: 100px;
 }
 
-
 .containerChamado {
   background-color: #141414;
-  padding: 2px;
+  padding: 0px;
   border-radius: 5px;
   text-align: left;
 }
-
 
 .containerChamado p {
   font-size: 1.125rem;
@@ -45,10 +43,8 @@
 }
 
 .chamadosub {
-padding-top: 300px;
+  padding-top: 300px;
 }
-
-/* Media Queries */
 
 @media(max-width: 800px) {
   .containerChamado {
@@ -59,8 +55,13 @@ padding-top: 300px;
   }
   .main-container {
     padding-top: 100px;
+    display: block;
+    padding: 0;
   }
-  
+  .main-container p {
+    padding: 9px;
+    text-align: justify;
+  }
 }
 
 @media(max-width: 450px) {
@@ -73,5 +74,10 @@ padding-top: 300px;
   .main-container {
     padding-top: 10px;
   }
-  
+}
+
+@media(max-width: 600px) {
+  .containerChamado {
+    height: 100vh;
+  }
 }
