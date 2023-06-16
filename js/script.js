@@ -49,3 +49,4 @@ cards.forEach(function(card) {
   card.addEventListener('mouseenter', slideMensagem);
   card.addEventListener('mouseleave', removerMensagem);
 });
+

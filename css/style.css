@@ -56,8 +56,6 @@ header {
 }
 
 
-
-
 #logo img {
   margin: 0 auto; 
   text-transform: uppercase;
@@ -74,6 +72,23 @@ header {
   grid-area: mn;
 }
 
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70vw; /* Usando 10% da largura da tela como espaço */
+}
+
+.main-nav {
+  margin-right: auto;
+}
+
+.homeicon {
+  float: right;
+}
+
+
+
 .main-nav a {
   color: var(--light);
   text-decoration: none;
@@ -84,7 +99,10 @@ header {
   color: #FF0000;
 }
 
+.homeicon {
+  width: 38px; /* Defina o tamanho desejado para o ícone */
 
+}
 
 /* MAIN CONTIANER */
 .main-container {
@@ -191,6 +209,27 @@ footer {
   }
 
 }
+
+@media (max-width: 880px) {
+  .main-nav {
+    flex-wrap: wrap;
+    justify-content: baseline;
+    margin-right: inherit;
+  }
+  
+  .main-nav a {
+    margin: 5px 10px;
+  }
+  
+  .nav-menu {
+    justify-content: center;
+    gap: 20px; 
+  }
+  .homeicon {
+    width: 34px; /* Defina o tamanho desejado para o ícone */
+  }
+}
+
 
 @media (max-width: 800px) {
   header {
@@ -309,6 +348,9 @@ footer {
   }
   .home-titulo {
     padding-top: 10px;
+  }
+  .homeicon {
+    width: 30px; /* Defina o tamanho desejado para o ícone */
   }
 }
 
