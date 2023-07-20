@@ -15,7 +15,7 @@ function slideMensagem() {
     } else if (this.querySelector('img').alt === 'Dashboard') {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Documentação e Arquivamento<br>&bull; Solicitação de Documentos<br>&bull; Informações';
     } else if (this.querySelector('img').alt === 'ONEPSS') {
-      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Vendas e negociações<br>&bull; Relacionamento com clientes<br>';
+      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Capacitação dos Colaboradores<br>&bull; Mediação e Análise<br>';
     } else if (this.querySelector('img').alt === 'BBS') {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Prevenção de Acidentes<br>&bull; Cultura de Segurança<br>';
     } else if (this.querySelector('img').alt === 'Setor de Recursos Humanos') {
@@ -32,8 +32,8 @@ function slideMensagem() {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Gerenciamento administrativo<br>&bull; Documentação<br>&bull; Processos internos';
     } else if (this.querySelector('img').alt === 'ShiftConnector') {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Vendas e negociações de soluções de software';
-    } else if (this.querySelector('img').alt === 'Bike') {
-      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Fornecimento de bicicletas';
+    } else if (this.querySelector('img').alt === 'SSHE') {
+      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Proteção aos Funcionários<br>&bull; Cumprimento das Regulações<br>&bull; Produtividade';
     }
 
     this.appendChild(mensagem);
