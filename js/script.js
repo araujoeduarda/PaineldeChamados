@@ -14,7 +14,7 @@ function slideMensagem() {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Controle de Qualidade<br>&bull; Cadeia de Custódia<br>&bull; Dados Experimentais';
     } else if (this.querySelector('img').alt === 'Dashboard') {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Documentação e Arquivamento<br>&bull; Solicitação de Documentos<br>&bull; Informações';
-    } else if (this.querySelector('img').alt === 'Setor Comercial') {
+    } else if (this.querySelector('img').alt === 'ONEPSS') {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Vendas e negociações<br>&bull; Relacionamento com clientes<br>';
     } else if (this.querySelector('img').alt === 'BBS') {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Prevenção de Acidentes<br>&bull; Cultura de Segurança<br>';
