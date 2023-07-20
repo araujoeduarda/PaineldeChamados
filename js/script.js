@@ -20,8 +20,8 @@ function slideMensagem() {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Prevenção de Acidentes<br>&bull; Cultura de Segurança<br>';
     } else if (this.querySelector('img').alt === 'Setor de Recursos Humanos') {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Gestão de pessoas<br>&bull; Recrutamento e seleção<br>&bull; Treinamento e desenvolvimento';
-    } else if (this.querySelector('img').alt === 'Setor de Segurança do Trabalho') {
-      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Segurança e saúde no trabalho<br>&bull; Prevenção de acidentes<br>&bull; Treinamentos de segurança';
+    } else if (this.querySelector('img').alt === 'BIO') {
+      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Monitoramento<br>&bull; Análise<br>&bull; Treinamentos de segurança';
     } else if (this.querySelector('img').alt === 'Setor de Estrutura') {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Infraestrutura física e tecnológica<br>&bull; Manutenção e suporte técnico<br>&bull; Gestão de ativos e recursos';
     } else if (this.querySelector('img').alt === 'MyDoc') {
