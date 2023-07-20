@@ -41,9 +41,9 @@ function slideMensagem() {
     } else if (this.querySelector('img').alt === 'Engenharia') {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Inspeções<br>&bull; Pesquisa e Desenvolvimento<br>&bull; Automação e Controle';
     } else if (this.querySelector('img').alt === 'Central de Energia') {
-      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Inspeções<br>&bull; Pesquisa e Desenvolvimento<br>&bull; Automação e Controle';
+      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Fornecimento de Energia Interna<br>&bull; Garantia de Fornecimento<br>&bull; Resposta a Picos de Demanda';
     } else if (this.querySelector('img').alt === 'Manutenção') {
-      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Inspeções<br>&bull; Pesquisa e Desenvolvimento<br>&bull; Automação e Controle';
+      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Manter a Produtividade<br>&bull; Prolongar a Vida Útil dos Ativos<br>&bull; Reparos';
     }
 
     this.appendChild(mensagem);
