@@ -6,23 +6,25 @@ function slideMensagem() {
     mensagem = document.createElement('div');
     mensagem.classList.add('mensagem');
 
+    
+
     if (this.querySelector('img').alt === 'Setor de TI') {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Problemas com Hardware<br>&bull; Problemas de Software';
-    } else if (this.querySelector('img').alt === 'Setor Financeiro') {
-      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Balancetes<br>&bull; Aportes';
-    } else if (this.querySelector('img').alt === 'Setor Administrativo') {
-      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Gerenciamento administrativo<br>&bull; Documentação<br>&bull; Processos internos';
+    } else if (this.querySelector('img').alt === 'LIMS') {
+      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Controle de Qualidade<br>&bull; Cadeia de Custódia<br>&bull; Dados Experimentais';
+    } else if (this.querySelector('img').alt === 'Dashboard') {
+      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Documentação e Arquivamento<br>&bull; Solicitação de Documentos<br>&bull; Informações';
     } else if (this.querySelector('img').alt === 'Setor Comercial') {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Vendas e negociações<br>&bull; Relacionamento com clientes<br>';
-    } else if (this.querySelector('img').alt === 'Setor Operacional') {
-      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Execução de atividades operacionais<br>&bull; Controle de processos<br>';
+    } else if (this.querySelector('img').alt === 'BBS') {
+      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Prevenção de Acidentes<br>&bull; Cultura de Segurança<br>';
     } else if (this.querySelector('img').alt === 'Setor de Recursos Humanos') {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Gestão de pessoas<br>&bull; Recrutamento e seleção<br>&bull; Treinamento e desenvolvimento';
     } else if (this.querySelector('img').alt === 'Setor de Segurança do Trabalho') {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Segurança e saúde no trabalho<br>&bull; Prevenção de acidentes<br>&bull; Treinamentos de segurança';
     } else if (this.querySelector('img').alt === 'Setor de Estrutura') {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Infraestrutura física e tecnológica<br>&bull; Manutenção e suporte técnico<br>&bull; Gestão de ativos e recursos';
-    } else if (this.querySelector('img').alt === 'myDoc') {
+    } else if (this.querySelector('img').alt === 'MyDoc') {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Registro de Problemas técnicos<br>&bull; Esclarecimento de dúvidas';
     } else if (this.querySelector('img').alt === 'MES') {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Sistemas de gestão de produção';
