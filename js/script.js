@@ -31,9 +31,19 @@ function slideMensagem() {
     } else if (this.querySelector('img').alt === 'CARA') {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Gerenciamento administrativo<br>&bull; Documentação<br>&bull; Processos internos';
     } else if (this.querySelector('img').alt === 'ShiftConnector') {
-      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Vendas e negociações de soluções de software';
+      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Comunicação Eficiente<br>&bull; Registro de Ocorrências<br>&bull; Monitoramento de Atividades';
     } else if (this.querySelector('img').alt === 'SSHE') {
       mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Proteção aos Funcionários<br>&bull; Cumprimento das Regulações<br>&bull; Produtividade';
+    } else if (this.querySelector('img').alt === 'Saude Ocupacional') {
+      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Prevenção de Acidentes<br>&bull; Ergonomia e Condições de Trabalho<br>&bull; Monitoramento de Ambiente';
+    } else if (this.querySelector('img').alt === 'Segurança Industrial') {
+      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Prevenção de Acidentes<br>&bull; Cumprimento de Normas<br>&bull; Análise e Avaliação de Riscos';
+    } else if (this.querySelector('img').alt === 'Engenharia') {
+      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Inspeções<br>&bull; Pesquisa e Desenvolvimento<br>&bull; Automação e Controle';
+    } else if (this.querySelector('img').alt === 'Central de Energia') {
+      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Inspeções<br>&bull; Pesquisa e Desenvolvimento<br>&bull; Automação e Controle';
+    } else if (this.querySelector('img').alt === 'Manutenção') {
+      mensagem.innerHTML = 'Este setor é responsável por:<br>&bull; Inspeções<br>&bull; Pesquisa e Desenvolvimento<br>&bull; Automação e Controle';
     }
 
     this.appendChild(mensagem);
