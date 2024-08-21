@@ -1,0 +1,147 @@
+
+:root {
+  --bg-lg-fragment: linear-gradient(
+    to right, 
+    black 1%,#ff1c10 2%,black 3%,#ff1c10 4%,black 5%,#ff1c10 6%,black 7%,#ff1c1071 8%,black 9%,#ff1c10 10%,black 11%,#ff1c1071 12%,black 13%,#ff1c10 14%,black 15%,#ff1c10 16%,black 17%,#ff1c1071 18%,#ff1c1071 20%,black 21%,#ff1c1071 22%,black 23%,#ff1c1071 24%,black 25%,#ff1c10 26%,black 27%,#ff1c1071 28%,black 29%,#ff1c1071 30%,black 33%,#ff1c10 34%,black 35%,#ff1c10 36%,black 37%,#ff1c1071 38%,#ff1c1071 40%,black 41%,#ff1c10 42%,black 43%,#ff1c1071 44%,black 45%,#ff1c10 46%,black 47%,#ff1c10 48%,black 49%,#ff1c10 50%,black 51%,#ff1c10 52%,black 53%,#ff1c10 54%,#ff1c10 56%,black 57%,#ff1c1071 58%,black 59%,#ff1c10 60%,black 61%,#ff1c10 62%,black 63%,#ff1c10 64%,black 65%,#ff1c10 66%,#ff1c1071 68%,black 69%,#ff1c10 70%,black 71%,#ff1c10 72%,black 73%,#ff1c1071 74%,black 75%,#ff1c1071 76%,black 77%,#ff1c10 78%,black 79%,#ff1c10 80%,#ff1c10 82%,black 83%,#ff1c10 84%,black 85%,#ff1c10 86%,black 87%,#ff1c10 88%,black 89%,#ff1c1071 90%,#ff1c10 92%,black 93%,#ff1c10 94%,black 95%,#ff1c10 96%,#ff1c10 98%,black 99%,#ff1c10 100%
+  );
+}
+
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: #000;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* A altura será igual à altura da viewport */
+  overflow: hidden;
+}
+
+.nflix__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tip {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  font-size: 30px;
+  font-weight: 100;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(255, 255, 255, 0.315);
+}
+
+.nflix__container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 500px;
+  width: 300px;
+  animation: zoom linear 2s 4.3s forwards;
+}
+
+.nflix__bar {
+  position: absolute;
+  width: 100px;
+  background-color: red;
+  transition: all 2s;
+}
+
+.nflix__bar-right {
+  right: 0px;
+  height: 0%;
+  max-height: 100%;
+  background-color: #8E0002;
+  animation: expand forwards .5s 2s, retract .5s forwards 3s;
+}
+
+.nflix__bar-middle {
+  left: 0px;
+  top: 0px;
+  height: 0px;
+  width: 95px;
+  transform-origin: top left;
+  transform: rotateZ(-22deg) skewY(20deg);
+  background-color: #E50914;
+  box-shadow: 1px 1px 25px rgba(0,0,0,.5);
+  animation: expand forwards .5s 1.5s, retract .5s forwards 3.5s;
+}
+
+.nflix__bar-left {
+  left: 0px;
+  height: 0%;
+  max-height: 100%;
+  background-color: #8E0002;
+  animation: expand forwards .5s 1s, fragment .5s forwards 4s;
+}
+
+@keyframes zoom {
+  0% {
+    transform: translateX(0px) scale(1);
+  }
+
+  20% {
+    transform: translateX(200px) scale(2);
+  }
+
+  40% {
+    transform: translateX(300px) scale(3);
+  }
+
+  60% {
+    transform: translateX(400px) scale(4);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateX(500px) scale(5);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(600px) scale(6);
+  }
+}
+
+@keyframes fragment {
+  0% {
+    background-image: var(--bg-lg-fragment);
+  }
+
+  100% {
+    background-image: var(--bg-lg-fragment);
+  }
+}
+
+@keyframes expand {
+  0% {
+    height: 0%;
+  }
+
+  100% {
+    height: calc(100% + 45px);
+  }
+}
+
+@keyframes retract {
+  0% {
+    height: 100%;
+    background-image: var(--bg-lg-fragment);
+  }
+
+  100% {
+    height: 0%;
+    background-image: var(--bg-lg-fragment);
+  }
+}

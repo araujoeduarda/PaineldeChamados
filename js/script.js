@@ -62,3 +62,36 @@ cards.forEach(function(card) {
   card.addEventListener('mouseleave', removerMensagem);
 });
 
+
+/*hora e data*/
+function formatarDataHora(data) {
+  const options = {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric', //adicionar segundos//
+    hour12: false
+  };
+  
+  return new Intl.DateTimeFormat('pt-BR', options).format(data);
+}
+
+function atualizarDataHora() {
+  const agora = new Date();
+  const dataHoraFormatada = formatarDataHora(agora);
+  document.getElementById('data-hora').textContent = dataHoraFormatada;
+}
+
+setInterval(atualizarDataHora, 1000); // Chama atualizarDataHora a cada 1000ms (1 segundo)
+
+
+document.body.addEventListener('click', () => {
+  const container = document.querySelector('.nflix__container');
+  const node = container.cloneNode(true);
+
+  document.body.removeChild(container);
+  document.body.appendChild(node);
+}) // Netflix vinheta
